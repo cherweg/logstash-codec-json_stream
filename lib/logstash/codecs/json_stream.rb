@@ -52,10 +52,7 @@ class LogStash::Codecs::JSONStream < LogStash::Codecs::Base
   end
 
   def flush(&block)
-    remainder = @buffer.flush
-    if !remainder.empty?
-      parse(@converter.convert(remainder), &block)
-    end
+    @logger.debug("empty flush method -- nothing to do")
   end
 
   private
