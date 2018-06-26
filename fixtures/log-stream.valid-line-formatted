@@ -1,0 +1,385 @@
+{
+  "messageType": "DATA_MESSAGE",
+  "owner": "054395779405",
+  "logGroup": "test-core",
+  "logStream": "i-0fb4ff6baf02dbc81-nginx-access",
+  "subscriptionFilters": [
+    "test-core-default-logs-LogSubscriptionToFirehose-51LNW0NP0XJJ"
+  ],
+  "logEvents": [
+    {
+      "id": "34105174814972220661657526963865163503534211313910743040",
+      "timestamp": 1529328931000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:31+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/checkout/calc/0?paymentMethod=INVOICE_INSTALLMENTS&numberOfInstallments=3&valuta=false&hash=FC060CE2FE7ED9A72E7FB8857E92A1E5 HTTP/1.1\",\"status\": \"500\",\"body_bytes_sent\":\"0\",\"x_origin\":\"ip-172-19-12-107.eu-central-1.compute.internal_346996536\",\"rt\":\"0.077\",\"utc\":\"0.012\",\"uht\":\"0.077\",\"urt\":\"0.077\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159041",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.031\",\"utc\":\"0.030\",\"uht\":\"0.031\",\"urt\":\"0.031\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159042",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.18.99\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.061\",\"utc\":\"0.060\",\"uht\":\"0.061\",\"urt\":\"0.061\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159043",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.035\",\"utc\":\"0.032\",\"uht\":\"0.035\",\"urt\":\"0.035\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159044",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/basket HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"30900\",\"x_origin\":\"ip-172-19-12-107.eu-central-1.compute.internal_350453878\",\"rt\":\"0.188\",\"utc\":\"0.012\",\"uht\":\"0.186\",\"urt\":\"0.188\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159045",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.017\",\"utc\":\"0.015\",\"uht\":\"0.017\",\"urt\":\"0.017\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159046",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.013\",\"utc\":\"0.011\",\"uht\":\"0.013\",\"urt\":\"0.013\"}"
+    },
+    {
+      "id": "34105174837272965860188150105400881776182572819891159047",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.013\",\"utc\":\"0.011\",\"uht\":\"0.012\",\"urt\":\"0.013\"}"
+    },
+    {
+      "id": "34105174859573711058718773246936600048830934325871575048",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.035\",\"utc\":\"0.008\",\"uht\":\"0.035\",\"urt\":\"0.035\"}"
+    },
+    {
+      "id": "34105174859573711058718773246936600048830934325871575049",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.033\",\"utc\":\"0.032\",\"uht\":\"0.033\",\"urt\":\"0.033\"}"
+    },
+    {
+      "id": "34105174859573711058718773246936600048830934325871575050",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/status HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"2937\",\"x_origin\":\"ib-proxy-dev-671361.example.com_80315697\",\"rt\":\"0.010\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.010\"}"
+    },
+    {
+      "id": "34105174859573711058718773246936600048830934325871575051",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174881874456257249396388472318321479295831851991052",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"POST /test/addToBasket HTTP/1.1\",\"status\": \"201\",\"body_bytes_sent\":\"158\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_338337539\",\"rt\":\"0.030\",\"utc\":\"0.008\",\"uht\":\"0.029\",\"urt\":\"0.029\"}"
+    },
+    {
+      "id": "34105174881874456257249396388472318321479295831851991053",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/addToBasket/success/320fad78-dca3-428c-88ef-63a03452c3d9/1/1?1=1 HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"7698\",\"x_origin\":\"ip-172-19-22-184.eu-central-1.compute.internal_251569332\",\"rt\":\"0.030\",\"utc\":\"0.007\",\"uht\":\"0.029\",\"urt\":\"0.030\"}"
+    },
+    {
+      "id": "34105174881874456257249396388472318321479295831851991054",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174881874456257249396388472318321479295831851991055",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174904175201455780019530008036594127657337832407056",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/status HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"2937\",\"x_origin\":\"ib-proxy-dev-671363.example.com_72829723\",\"rt\":\"0.010\",\"utc\":\"0.008\",\"uht\":\"0.010\",\"urt\":\"0.010\"}"
+    },
+    {
+      "id": "34105174904175201455780019530008036594127657337832407057",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174904175201455780019530008036594127657337832407058",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.007\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174904175201455780019530008036594127657337832407059",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/status HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"2937\",\"x_origin\":\"ib-proxy-dev-671361.example.com_71674368\",\"rt\":\"0.009\",\"utc\":\"0.007\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    }
+  ]
+}
+{
+  "messageType": "DATA_MESSAGE",
+  "owner": "054395779405",
+  "logGroup": "test-core",
+  "logStream": "i-0dc0e0be977ea018a-nginx-access",
+  "subscriptionFilters": [
+    "test-core-default-logs-LogSubscriptionToFirehose-51LNW0NP0XJJ"
+  ],
+  "logEvents": [
+    {
+      "id": "34105174814972220661657526963912696560299253571208675328",
+      "timestamp": 1529328931000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:31+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/basket/amount.json HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"12\",\"x_origin\":\"ip-172-19-22-52.eu-central-1.compute.internal_345499183\",\"rt\":\"0.012\",\"utc\":\"0.008\",\"uht\":\"0.012\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174814972220661657526963912696560299253571208675329",
+      "timestamp": 1529328931000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:31+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/checkout/calc/0?paymentMethod=INVOICE_INSTALLMENTS&numberOfInstallments=3&valuta=false&hash=FC060CE2FE7ED9A72E7FB8857E92A1E5 HTTP/1.1\",\"status\": \"500\",\"body_bytes_sent\":\"0\",\"x_origin\":\"ip-172-19-12-107.eu-central-1.compute.internal_346996534\",\"rt\":\"0.070\",\"utc\":\"0.008\",\"uht\":\"0.070\",\"urt\":\"0.070\"}"
+    },
+    {
+      "id": "34105174814972220661657526963912696560299253571208675330",
+      "timestamp": 1529328931000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:31+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091331",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.18.99\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091332",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.016\",\"utc\":\"0.012\",\"uht\":\"0.016\",\"urt\":\"0.016\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091333",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.008\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091334",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091335",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.012\",\"utc\":\"0.011\",\"uht\":\"0.012\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091336",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.015\",\"utc\":\"0.014\",\"uht\":\"0.015\",\"urt\":\"0.015\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091337",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150105448414832947615077189091338",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174859573711058718773246984133105595976583169507339",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/statics/html/addtobasket HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"722\",\"x_origin\":\"ip-172-19-22-184.eu-central-1.compute.internal_346665771\",\"rt\":\"0.012\",\"utc\":\"0.008\",\"uht\":\"0.012\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174859573711058718773246984133105595976583169507340",
+      "timestamp": 1529328933000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:33+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/status HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"2939\",\"x_origin\":\"ib-proxy-dev-671361.example.com_80315695\",\"rt\":\"0.013\",\"utc\":\"0.008\",\"uht\":\"0.013\",\"urt\":\"0.013\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923341",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.010\",\"utc\":\"0.008\",\"uht\":\"0.010\",\"urt\":\"0.010\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923342",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/statics/html/addtobasket HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"722\",\"x_origin\":\"ip-172-19-0-205.eu-central-1.compute.internal_344747408\",\"rt\":\"0.012\",\"utc\":\"0.008\",\"uht\":\"0.011\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923343",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923344",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923345",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/basket/amount.json HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"12\",\"x_origin\":\"ip-172-19-0-205.eu-central-1.compute.internal_337968677\",\"rt\":\"0.012\",\"utc\":\"0.008\",\"uht\":\"0.012\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174881874456257249396388519851378244338089149923346",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174904175201455780019530055569650892699595130339347",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/status HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"2939\",\"x_origin\":\"ib-proxy-dev-671361.example.com_80348459\",\"rt\":\"0.014\",\"utc\":\"0.012\",\"uht\":\"0.014\",\"urt\":\"0.014\"}"
+    },
+    {
+      "id": "34105174904175201455780019530055569650892699595130339348",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.014\",\"utc\":\"0.012\",\"uht\":\"0.014\",\"urt\":\"0.014\"}"
+    }
+  ]
+}
+{
+  "messageType": "DATA_MESSAGE",
+  "owner": "054395779405",
+  "logGroup": "test-core",
+  "logStream": "i-07930bf223ee9a6c1-nginx-access",
+  "subscriptionFilters": [
+    "test-core-default-logs-LogSubscriptionToFirehose-51LNW0NP0XJJ"
+  ],
+  "logEvents": [
+    {
+      "id": "34105174814972220661657526964715023101401175618727313408",
+      "timestamp": 1529328931000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:31+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/checkout/calc/0?paymentMethod=INVOICE_INSTALLMENTS&numberOfInstallments=3&valuta=false&hash=FC060CE2FE7ED9A72E7FB8857E92A1E5 HTTP/1.1\",\"status\": \"500\",\"body_bytes_sent\":\"0\",\"x_origin\":\"ip-172-19-12-107.eu-central-1.compute.internal_346996536\",\"rt\":\"0.065\",\"utc\":\"0.008\",\"uht\":\"0.065\",\"urt\":\"0.065\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729409",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.18.99\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729410",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729411",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test-core/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729412",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729413",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729414",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.013\",\"utc\":\"0.012\",\"uht\":\"0.013\",\"urt\":\"0.013\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729415",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.012\",\"utc\":\"0.011\",\"uht\":\"0.012\",\"urt\":\"0.012\"}"
+    },
+    {
+      "id": "34105174837272965860188150106250741374049537124707729416",
+      "timestamp": 1529328932000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:32+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.008\",\"utc\":\"0.007\",\"uht\":\"0.008\",\"urt\":\"0.008\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561417",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.010\",\"utc\":\"0.009\",\"uht\":\"0.010\",\"urt\":\"0.010\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561418",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.18.99\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.017\",\"utc\":\"0.016\",\"uht\":\"0.017\",\"urt\":\"0.017\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561419",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/basket HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"30900\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_335328889\",\"rt\":\"0.058\",\"utc\":\"0.012\",\"uht\":\"0.056\",\"urt\":\"0.058\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561420",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561421",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.007\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561422",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.009\",\"utc\":\"0.008\",\"uht\":\"0.009\",\"urt\":\"0.009\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561423",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.011\",\"utc\":\"0.010\",\"uht\":\"0.011\",\"urt\":\"0.011\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561424",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.015\",\"utc\":\"0.014\",\"uht\":\"0.015\",\"urt\":\"0.015\"}"
+    },
+    {
+      "id": "34105174881874456257249396389322177919346260136668561425",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.1.149\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.010\",\"utc\":\"0.010\",\"uht\":\"0.010\",\"urt\":\"0.010\"}"
+    },
+    {
+      "id": "34105174904175201455780019530857896191994621642648977426",
+      "timestamp": 1529328935000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:35+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/enterCheckout HTTP/1.1\",\"status\": \"302\",\"body_bytes_sent\":\"0\",\"x_origin\":\"ip-172-19-10-83.eu-central-1.compute.internal_328386335\",\"rt\":\"0.011\",\"utc\":\"0.008\",\"uht\":\"0.011\",\"urt\":\"0.011\"}"
+    },
+    {
+      "id": "34105174926475946654310642672393614464642983148629393427",
+      "timestamp": 1529328936000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:36+00:00\",\"vertical\":\"test\",\"service\":\"test-core\",\"logging_type\":\"NginxAccess\",\"remote_addr\":\"172.18.15.20\",\"remote_user\":\"\",\"request\":\"GET /test/internal/health HTTP/1.1\",\"status\": \"200\",\"body_bytes_sent\":\"5\",\"x_origin\":\"\",\"rt\":\"0.010\",\"utc\":\"0.008\",\"uht\":\"0.010\",\"urt\":\"0.010\"}"
+    }
+  ]
+}
+{
+  "messageType": "DATA_MESSAGE",
+  "owner": "054395779405",
+  "logGroup": "test-core",
+  "logStream": "i-0fb4ff6baf02dbc81-service",
+  "subscriptionFilters": [
+    "test-core-default-logs-LogSubscriptionToFirehose-51LNW0NP0XJJ"
+  ],
+  "logEvents": [
+    {
+      "id": "34105174881874456257249396392024240125823003107273408512",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34.561+00:00\",\"@version\":\"1\",\"message\":\"add to basket\",\"logger_name\":\"test.core.useCases\",\"level\":\"INFO\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_338337539\",\"is_api\":\"false\",\"quantity\":\"1\",\"variationId\":\"666523732-M24\",\"articleNumberAndPromotion\":\"undefined\",\"logging_type\":\"UseCase\",\"caller\":\"AddToTestController\",\"vertical\":\"test\",\"service\":\"test-core\"}"
+    }
+  ]
+}
+{
+  "messageType": "DATA_MESSAGE",
+  "owner": "054395779405",
+  "logGroup": "test-core",
+  "logStream": "i-07930bf223ee9a6c1-service",
+  "subscriptionFilters": [
+    "test-core-default-logs-LogSubscriptionToFirehose-51LNW0NP0XJJ"
+  ],
+  "logEvents": [
+    {
+      "id": "34105174881874456257249396392315458381300266493766008832",
+      "timestamp": 1529328934000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:34.398+00:00\",\"@version\":\"1\",\"message\":\"show everything\",\"logger_name\":\"test.core.useCases\",\"level\":\"INFO\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_335328889\",\"is_api\":\"false\",\"caller\":\"TestController\",\"logging_type\":\"UseCase\",\"vertical\":\"test\",\"service\":\"test-core\"}"
+    },
+    {
+      "id": "34105174971077437051371888958458331471893712517687672834",
+      "timestamp": 1529328938000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:38.311+00:00\",\"@version\":\"1\",\"message\":\"Retrieving user from user system\",\"logger_name\":\"test.core.useCases\",\"level\":\"INFO\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_346625514\",\"is_api\":\"false\",\"caller\":\"UserRESTClient\",\"identifierLength\":40,\"logging_type\":\"UseCase\",\"vertical\":\"test\",\"service\":\"test-core\"}"
+    },
+    {
+      "id": "34105174971077437051371888958458331471893712517687672835",
+      "timestamp": 1529328938000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:38.454+00:00\",\"@version\":\"1\",\"message\":\"SOAP request for extraCool\",\"logger_name\":\"com.example.test.service.remote.handler.SuperSoapHandler\",\"level\":\"INFO\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_346625514\",\"is_api\":\"false\",\"SOAP-Type\":\"request\",\"SOAP-Service\":\"extraCool\",\"logging_type\":\"Application\",\"SOAP-HTTP-Headers\":\"{SOAPAction=[extraCool], X-Method=[extraCool], x-b2c-date=[2018-06-18T13:35:38.453Z], x-origin=[ip-172-19-5-178.eu-central-1.compute.internal_346625514], TransactionID=[9e6b34cb-43f0-4a74-92dc-66ae5f0b22be|2018-06-18_13:35:38|13|172.17.0.2000001529327808221|000]}\",\"SOAP-Message\":\"<S:Envelope xmlns:S=\\\"http://schemas.xmlsoap.org/soap/envelope/\\\" xmlns:SOAP-ENV=\\\"http://schemas.xmlsoap.org/soap/envelope/\\\"><SOAP-ENV:Header/><S:Body><ns3:ExtraCoolRequest xmlns:ns1=\\\"http://test.example.com/schema/common/request\\\" xmlns:ns2=\\\"http://test.example.com/schema/common\\\" xmlns:ns3=\\\"http://test.example.com/schema/customer/request\\\" xmlns:ns4=\\\"http://test.example.com/schema/customer\\\" xmlns:ns5=\\\"http://test.example.com/schema/common/response\\\" xmlns:ns6=\\\"http://test.example.com/schema/customer/response\\\"><ns1:requestParameter><ns1:testingSystemWithDomain><ns1:testingSystem>Internet</ns1:testingSystem><ns1:domainSign>13</ns1:domainSign></ns1:testingSystemWithDomain><ns1:release>36.0.0</ns1:release></ns1:requestParameter><ns3:id><ns1:anon><ns2:identifier>4771</ns2:identifier><ns2:hellFreezesOver>1</ns2:hellFreezesOver><ns1:birthdate>********</ns1:birthdate></ns1:anon></ns3:id></ns3:ExtraCoolRequest></S:Body></S:Envelope>\",\"vertical\":\"test\",\"service\":\"test-core\"}"
+    },
+    {
+      "id": "34105174971077437051371888958458331471893712517687672837",
+      "timestamp": 1529328938000,
+      "message": "{\"@timestamp\":\"2018-06-18T13:35:38.577+00:00\",\"@version\":\"1\",\"message\":\"removing customer bonus account:\",\"logger_name\":\"com.example.test.service.LocalUserService\",\"level\":\"INFO\",\"x_origin\":\"ip-172-19-5-178.eu-central-1.compute.internal_346625514\",\"is_api\":\"false\",\"logging_type\":\"Application\",\"vertical\":\"test\",\"service\":\"test-core\"}"
+    }
+  ]
+}
