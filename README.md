@@ -1,6 +1,6 @@
 # Logstash Plugin
 
-[![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-codec-json_lines.svg)](https://travis-ci.org/logstash-plugins/logstash-codec-json_lines)
+[![Travis Build Status](https://travis-ci.org/cherweg/logstash-codec-json_stream.svg?branch=master)](https://travis-ci.org/cherweg/logstash-codec-json_stream)
 
 This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
