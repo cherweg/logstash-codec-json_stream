@@ -1,3 +1,6 @@
+## 1.1.0
+- Refactor code
+- Json Parse Failure should be a warning level
 ## 1.0.0
 - Add spec tests thanks to johannesthoenes4000 & thomasklinger123
 - Add a better parsing method thanks to johannesthoenes4000
