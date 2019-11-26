@@ -21,9 +21,10 @@ class LogStash::Codecs::JSONStream < LogStash::Codecs::Base
   end
 
   def decode(concatenated_json, &block)
-    decode_unsafe(concatenated_json, &block)
+    array_json = @converter.convert("[#{concatenated_json.gsub('}{', '},{')}]")
+    parse(array_json, &block)
   rescue LogStash::Json::ParserError => e
-    @logger.error("JSON parse error for json stream / concatenated json, original data now in message field", :error => e, :data => concatenated_json)
+    @logger.warn("JSON parse error for json stream / concatenated json, original data now in message field", :error => e, :data => concatenated_json)
     yield LogStash::Event.new("message" => concatenated_json, "tags" => ["_jsonparsefailure"])
   rescue StandardError => e
     # This should NEVER happen. But hubris has been the cause of many pipeline breaking things
@@ -38,18 +39,30 @@ class LogStash::Codecs::JSONStream < LogStash::Codecs::Base
   end
 
   def encode(event)
-    @logger.error("Encoding is not supported by 'concatenated_json' plugin yet")
-  end
-
-  def flush(&block)
-    @logger.debug("empty flush method -- nothing to do")
+    @logger.error("Encoding is not supported by 'jsonstream' plugin yet")
   end
 
   private
-  def decode_unsafe(concatenated_json)
-    array_json = @converter.convert("[#{concatenated_json.gsub('}{', '},{')}]")
-    LogStash::Json.load(array_json).each do |decoded_event|
-       yield(LogStash::Event.new(decoded_event))
-    end
+
+  # from_json_parse uses the Event#from_json method to deserialize and directly produce events
+  def from_json_parse(json, &block)
+    LogStash::Event.from_json(json).each { |event| yield event }
+  rescue LogStash::Json::ParserError => e
+    @logger.warn("JSON parse error, original data now in message field", :error => e, :data => json)
+    yield LogStash::Event.new("message" => json, "tags" => ["_jsonparsefailure"])
   end
+
+  # legacy_parse uses the LogStash::Json class to deserialize json
+  def legacy_parse(json, &block)
+    # ignore empty/blank lines which LogStash::Json#load returns as nil
+    o = LogStash::Json.load(json)
+    yield(LogStash::Event.new(o)) if o
+  rescue LogStash::Json::ParserError => e
+    @logger.warn("JSON parse error, original data now in message field", :error => e, :data => json)
+    yield LogStash::Event.new("message" => json, "tags" => ["_jsonparsefailure"])
+  end
+
+  # keep compatibility with all v2.x distributions. only in 2.3 will the Event#from_json method be introduced
+  # and we need to keep compatibility for all v2 releases.
+  alias_method :parse, LogStash::Event.respond_to?(:from_json) ? :from_json_parse : :legacy_parse
 end

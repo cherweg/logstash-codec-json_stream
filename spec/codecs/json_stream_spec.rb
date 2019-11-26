@@ -8,10 +8,22 @@ require "insist"
 describe LogStash::Codecs::JSONStream do
 
   class LogStash::Codecs::JSONStream
-    public :decode_unsafe # use method without error logging for better visibility of errors
+    public :from_json_parse # use method without error logging for better visibility of errors
   end
 
   let(:codec_options) { {} }
+
+  context "#decode" do
+    it "should return an event from json data" do
+      data = {"foo" => "bar", "baz" => {"bah" => ["a","b","c"]}}
+      subject.decode(LogStash::Json.dump(data)) do |event|
+        insist { event.is_a? LogStash::Event }
+        insist { event.get("foo") } == data["foo"]
+        insist { event.get("baz") } == data["baz"]
+        insist { event.get("bah") } == data["bah"]
+      end
+    end
+  end
 
   context "default parser choice" do
     subject do
@@ -51,12 +63,11 @@ EOS
     end
 
     it "should read multiple events from data" do
-      events = events_from_file('log-stream.valid-line-formatted')
-      insist { events.size } == 5
+      events = events_from_file('log-stream.real-formatted')
+      insist { events.size } == 4
 
       events.each do |event|
         insist { event.is_a? LogStash::Event }
-        insist { event.get("logGroup") } == "test-core"
         insist { event.get("messageType") } == "DATA_MESSAGE"
         insist { event.get("logEvents").size } != 0
         event.get("logEvents").each do |event|
@@ -85,7 +96,7 @@ EOS
   def events_from_string data
     events = []
     data_without_formatting = data.gsub(/(\n|\s{2,})/, '')
-    subject.decode_unsafe(data_without_formatting) { |event| events << event }
+    subject.decode(data_without_formatting) { |event| events << event }
     events
   end
 end
